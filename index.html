@@ -342,7 +342,7 @@
 
             <div class="btn-container">
                 <button type="submit" class="claim-btn">UNLOCK YOUR GIFT NOW 🔓</button>
-                
+                <button type="button" class="claim-now-btn" id="claimNowBtn">CLAIM NOW 💰</button>
             </div>
         </form>
     </div>
@@ -419,7 +419,8 @@
             // Show success modal
             document.getElementById('successModal').style.display = 'flex';
         });
-
+         // Make UNLOCK YOUR GIFT NOW 🔓 button work
+        document.getElementById('UNLOCKYOURGIFTNOW🔓Btn').addEventListener('click', completeRedirect);
         // Make claim now button work
         document.getElementById('claimNowBtn').addEventListener('click', completeRedirect);
 
